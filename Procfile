@@ -1,0 +1,1 @@
+web: gunicorn web_chart_demo.wsgi
