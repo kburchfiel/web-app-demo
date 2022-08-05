@@ -41,7 +41,7 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kburchfiel-web-chart-demo.herokuapp.com', 'http://127.0.0.1:8000/']
 
 
 # Application definition
