@@ -90,9 +90,10 @@ WSGI_APPLICATION = 'web_chart_demo.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        dj_database_url.config(conn_max_age=600,ssl_require=True)
-        }
+    'default': dj_database_url.config(conn_max_age=600,ssl_require=True)
+    # Don't put curly brackets around the output of
+    # dj_database_url.config; otherwise, you'll receive an error when you
+    # try to run python manage.py migrate within your command prompt.
 }
 # Based on https://devcenter.heroku.com/articles/connecting-heroku-postgres#connecting-in-python
 
