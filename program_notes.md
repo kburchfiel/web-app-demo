@@ -155,7 +155,11 @@ def index(request):
 Now that the app's framework and database were in place, I could turn my attention to building the app's functionality. 
 
 
-## Adding 
+## Pushing code to GitHub:
+
+Initially, Visual Studio Code pushed my code to heroku/master. However, I also wanted to push my code and other files (such as this documentation) to GitHub. Therefore, to set up this connection, I clicked on the 3 dots to the right of 'Source Control' within VS Code's Git extension, then selected Remote --> Add Remote --> Add remote from GitHub. I then entered the URL of a repository (https://github.com/kburchfiel/web-app-demo) that I had created on GitHub, along with 'origin' as the remote name. (These steps were based on the advice given by prosti [here](https://stackoverflow.com/a/58039610/13097194).)
+
+Whenever I need to push changes to GitHub, I can click on the 3 dots near 'Source Control', then choose 'Pull, Push' --> 'Push To' --> 'Origin' (the remote name for my GitHub repository.)
 
 
 [Note: try going through the rest of the tutorial in order to review template creation and the request/response cycle. But before that, you can create code that will take flight information from the .csv file and convert it into a format that can be used by the app. (This might involve grouping departures counts by the top 20 airports, airlines, and airplanes so that you end up with a roughly 8000-row DataFrame--just large enough to fit within your Heroku database! Or, to be on the safer side, you could limit the departures counts to the top 10 airports, airlines, and airplanes.)
